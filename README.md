@@ -1,8 +1,28 @@
-# React + Vite
+# Projeto RocketNotes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação que armazena notas de um usuário
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Instalação](#instalação)
+
+## Instalação
+
+Siga os passos abaixo para instalar e configurar o ambiente de desenvolvimento local.
+
+```bash
+# Clone o repositório
+git clone https://github.com/ArthurMartinns/RocketNotes.git
+
+# Navegue até o diretório do projeto
+cd RocketNotes
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env
+
+# Inicie o servidor
+npm run dev
+```
