@@ -12,6 +12,11 @@ function Login() {
             Aplicação para salvar e gerenciar seus links úteis.
           </S.Left_p>
         </S.Top>
+        <S.Bottom>
+          <S.Bottom_h2>
+            Faça login
+          </S.Bottom_h2>
+        </S.Bottom>
       </S.Left>
       <S.Right> 
         <img src="assets/imgLogin.png" alt="" />
