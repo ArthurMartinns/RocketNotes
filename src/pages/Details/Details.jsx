@@ -1,9 +1,14 @@
 import * as S from './Details.styles'
+import Header from '../../components/Header/header'
+import Button from '../../components/Button/button'
 
-export function Details() {
+function Details() {
   return (
     <S.Container>
-
+      <Header/>
+      <Button title={'Voltar'}/>
     </S.Container>
   )
 }
+
+export default Details;
