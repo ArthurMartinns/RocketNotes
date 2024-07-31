@@ -2,11 +2,17 @@ import * as S from './Details.styles'
 import Header from '../../components/Header/header'
 import Button from '../../components/Button/button'
 import Section from '../../components/Section/section';
+import Tag from '../../components/Tag/tag';
+import ButtonText from '../../components/ButtonText/buttonText'
 
 function Details() {
   return (
     <S.Container>
-      <Header/>
+
+        <Header/>
+
+        <ButtonText title={'Excluir Notas'}/>
+        
         <Section title={"Links Úteis"}>
           <S.Links>
             <li>
@@ -21,7 +27,14 @@ function Details() {
             </li>
           </S.Links>
         </Section>
-      <Button title={'Voltar'}/>
+
+        <Section title={"Marcadores"}>
+          <Tag title={"Node.js"}/>
+          <Tag title={"Express"}/>
+        </Section>
+
+        <Button title={'Voltar'}/>
+
     </S.Container>
   )
 }
