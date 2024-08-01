@@ -8,33 +8,44 @@ import ButtonText from '../../components/ButtonText/buttonText'
 function Details() {
   return (
     <S.Container>
-
         <Header/>
+        <main>
+          <S.Content>
+            <ButtonText title={'Excluir Notas'}/>
+            
+            <h1>
+              Introdução ao React
+            </h1>
 
-        <ButtonText title={'Excluir Notas'}/>
-        
-        <Section title={"Links Úteis"}>
-          <S.Links>
-            <li>
-              <a href="">
-                https://rocketseat.com.br
-              </a>
-            </li>
-            <li>
-              <a href="">
-                https://rocketseat.com.br
-              </a>
-            </li>
-          </S.Links>
-        </Section>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Placeat quisquam eaque veniam autem dolorum repellat esse earum quis, 
+              ad ratione et fugiat voluptatem. Earum unde omnis ducimus in odio suscipit.
+            </p>
 
-        <Section title={"Marcadores"}>
-          <Tag title={"Node.js"}/>
-          <Tag title={"Express"}/>
-        </Section>
+            <Section title={"Links Úteis"}>
+              <S.Links>
+                <li>
+                  <a href="">
+                    https://rocketseat.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    https://rocketseat.com.br
+                  </a>
+                </li>
+              </S.Links>
+            </Section>
 
-        <Button title={'Voltar'}/>
+            <Section title={"Marcadores"}>
+              <Tag title={"Node.js"}/>
+              <Tag title={"Express"}/>
+            </Section>
 
+            <Button title={'Voltar'}/>
+          </S.Content>
+        </main>
     </S.Container>
   )
 }
