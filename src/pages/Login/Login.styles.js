@@ -10,13 +10,13 @@ export const Background = styled.div`
 `;
 
 export const Left = styled.div`
-    width: 100%;
+    width: 60%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 3.6rem;
 `
 
 export const Left_h1 = styled.div`
@@ -28,10 +28,13 @@ export const Top = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
 `
 export const Bottom = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 340px;
 `
 export const Bottom_h2 = styled.div`
     font-size: 24px;
@@ -46,5 +49,23 @@ export const Left_p = styled.div`
 `
 
 export const Right = styled.div`
+    width: 100%;
+
+    > img {
+        width: 100%;
+    }
+`
+
+export const Inputs = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: 100%;
+`
+export const ButtonText = styled.div`
+    margin-top: 4rem;
+`
+export const Button = styled.div`
+    margin-top: 1rem;
     width: 100%;
 `
