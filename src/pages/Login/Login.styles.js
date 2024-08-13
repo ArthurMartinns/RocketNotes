@@ -6,7 +6,6 @@ export const Background = styled.div`
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
 export const Left = styled.div`
@@ -34,13 +33,13 @@ export const Bottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 340px;
+    width: 3.4rem;
 `
 export const Bottom_h2 = styled.div`
     font-size: 24px;
     color: ${({theme}) => theme.COLORS.WHITE};
     font-weight: medium;
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
 `
 
 export const Left_p = styled.div`
