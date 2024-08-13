@@ -1,70 +1,83 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Background = styled.div`
     width: 100%;
     height: 100vh;
+
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-`;
+`
 
 export const Left = styled.div`
+    width: 40%;
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`
+
+export const Right = styled.div`
     width: 60%;
-    height: 100vh;
+
+    background-image: url(assets/imgLogin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+`
+
+export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3.6rem;
+
+    width: 100%;
+    height: 100vh;
 `
 
-export const Left_h1 = styled.div`
-    font-weight: bold;
-    font-size: 48px;
-    color: ${({theme}) => theme.COLORS.ORANGE};
-`
 export const Top = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.2rem;
 `
+
+export const Top_h2 = styled.div`
+    color: ${({theme}) => theme.COLORS.ORANGE};
+    font-weight: bold;
+    font-size: 4.8rem;
+`
+
+export const Top_p = styled.div`
+    font-size: 1.4rem;
+    color: ${({theme}) => theme.COLORS.GRAY_100};
+`
+
 export const Bottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 3.4rem;
+    width: 34rem;
 `
+
 export const Bottom_h2 = styled.div`
     font-size: 24px;
-    color: ${({theme}) => theme.COLORS.WHITE};
+    color: ${({theme}) => theme.COLORS.ORANGE};
     font-weight: medium;
     margin-bottom: 4.8rem;
 `
 
-export const Left_p = styled.div`
-    font-size: 14px;
-    color: ${({theme}) => theme.COLORS.GRAY_100};
-`
-
-export const Right = styled.div`
+export const Inputs = styled.div`
     width: 100%;
 
-    > img {
-        width: 100%;
-    }
-`
-
-export const Inputs = styled.div`
     display: flex;
     flex-direction: column;
-    gap: .6rem;
-    width: 100%;
+    gap: 0.8rem;
 `
-export const ButtonText = styled.div`
-    margin-top: 4rem;
-`
-export const Button = styled.div`
-    margin-top: 1rem;
-    width: 100%;
+
+export const Back = styled.div`
+    margin-top: 5rem;
 `
