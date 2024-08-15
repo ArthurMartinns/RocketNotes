@@ -56,10 +56,12 @@ export const Menu = styled.ul`
 export const Search = styled.div`
   grid-area: search;
   border-left: 1px solid ${({theme}) => theme.COLORS.BACKGROUND_700};
+  padding: 64px 64px 0;
 `
 export const Content = styled.div`
   grid-area: content;
   border-left: 1px solid ${({theme}) => theme.COLORS.BACKGROUND_700};
+  padding: 0 64px;
 `
 export const NewNote = styled.button`
   grid-area: newnote;

@@ -1,6 +1,10 @@
 import * as S from './Home.styles'
 import Header from '../../components/Header/header'
 import { FiPlus } from 'react-icons/fi'
+import Section from '../../components/Section/section'
+import Note from '../../components/Note/note.jsx'
+import {Input} from '../../components/Input/input.jsx'
+import { FaSearch } from 'react-icons/fa'
 
 function Home() {
     return (
@@ -30,10 +34,21 @@ function Home() {
             </S.Menu>
 
             <S.Search>
-
+                <Input placeholder="Pesquisar pelo titulo" icon={FaSearch} />
             </S.Search>
 
             <S.Content>
+
+            <Section title="Minhas notas">
+                <Note data={{
+                    title: 'React',
+                    tags: [
+                        { id: '1', name: 'react' },
+                        { id: '2', name: 'rocketseat' }
+                    ]
+                }}
+                />
+            </Section>
 
             </S.Content>
 
