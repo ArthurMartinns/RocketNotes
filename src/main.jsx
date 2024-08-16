@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme.js'
 import GlobalStyles from './styles/global.js'
-import Home from './pages/Home/Home.jsx'
+import Profile from './pages/Profile/Profile.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-      <Home/>
+      <Profile/>
     </ThemeProvider>
   </React.StrictMode>
 )
