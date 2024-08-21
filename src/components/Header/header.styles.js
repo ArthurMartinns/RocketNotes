@@ -8,10 +8,9 @@ export const Container = styled.div`
 
     padding: 0 80px;
 
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    border: 1px solid ${({theme}) => theme.COLORS.BACKGROUND_700};
 
+    background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
 
     display: flex;
     flex-direction: row;
@@ -57,4 +56,4 @@ export const Button = styled.div`
         color: ${({ theme }) => theme.COLORS.GRAY_100};
         font-size: 36px;
     }
-`
+`;
