@@ -15,7 +15,7 @@ export const SubHeader = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #fff; 
+    margin-top: 5rem;
     width: 100%;
 
 
@@ -26,7 +26,7 @@ export const SubHeader = styled.div`
 
     > p {
         font-size: 12px;
-        color: ${({theme}) => theme.COLORS.GRAY};
+        color: ${({theme}) => theme.COLORS.GRAY_100};
     }
 `
 
@@ -38,10 +38,14 @@ export const Mid = styled.div`
 
     display: flex;
     flex-direction: column;
-    border: 1px solid ${({theme}) => theme.COLORS.WHITE};
     max-width: 45rem;
 `
 
 export const SubMid = styled.div`
     width: 100%;
+    margin-top: 3rem;
+
+    div:last-child {
+        height: 8.6rem;
+    }
 `

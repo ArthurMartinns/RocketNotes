@@ -1,6 +1,7 @@
 import * as S from './Create.styles'
 import Header from '../../components/Header/header'
 import Input from '../../components/Input/input'
+import Section from '../../components/Section/section'
 
 function CreateNote() {
     return(
@@ -11,7 +12,7 @@ function CreateNote() {
                 <S.Mid>
                     <S.SubHeader>
                         <h2>
-                            Notes
+                            Criar Nota
                         </h2>
                         <p>
                             Voltar
@@ -19,8 +20,13 @@ function CreateNote() {
                     </S.SubHeader>
 
                     <S.SubMid>
-                        <Input/>
+                        <Input placeholder="Título" />
+                        <Input placeholder="Observações" />
                     </S.SubMid>
+
+                    <Section title={"Links Úteis"}>
+
+                    </Section>
                 </S.Mid>
             </S.Back>
         </S.Content>
