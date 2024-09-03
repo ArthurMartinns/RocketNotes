@@ -6,7 +6,6 @@ export const Content = styled.div`
 
 export const Back = styled.div`
     width: 100%;
-    height: 100vh;
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
 `
 
@@ -32,13 +31,18 @@ export const SubHeader = styled.div`
 
 export const Mid = styled.div`
     width: 100%;
-    height: 100vh;
 
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     max-width: 45rem;
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `
 
 export const SubMid = styled.div`
